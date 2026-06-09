@@ -1,0 +1,18 @@
+# Build output
+build/
+dist/
+
+# Runtime data
+highscore.dat
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Unused / empty asset placeholders
+assets/font.ttf
+assets/background.png
