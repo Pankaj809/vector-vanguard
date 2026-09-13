@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Vector Vanguard</string>
+    <string name="title_activity_main">Vector Vanguard</string>
+    <string name="package_name">com.codepariwar.vectorvanguard</string>
+    <string name="custom_url_scheme">com.codepariwar.vectorvanguard</string>
+</resources>

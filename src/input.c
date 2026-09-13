@@ -9,7 +9,7 @@ static Entity* get_player(GameModel* model) {
 }
 
 void input_process(GameModel* model) {
-    SDL_Event event;
+SDL_Event event;
     while (SDL_PollEvent(&event)) {
         if (event.type == SDL_QUIT) model->is_running = false;
 

@@ -157,7 +157,7 @@ void game_update(GameModel* model, float dt) {
                     game_push_log(model, "HOSTILE NEUTRALIZED");
                     if (model->audio_enabled && model->sfx_explosion)
                         Mix_PlayChannel(-1, model->sfx_explosion, 0);
-                    for (int k = 0; k < 10; k++) game_spawn_particle(model, a->pos, 0, 220, 255);
+                    for (int k = 0; k < 10; k++) game_spawn_particle(model, a->pos, 220, 200, 170);
                 } else if (b->type == TYPE_PLAYER) {
                     a->active = false;
                     model->lives--;

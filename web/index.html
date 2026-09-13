@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- viewport-fit=cover so we can pad around notches with env(safe-area-inset-*) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#080c16" />
+  <meta name="color-scheme" content="dark" />
+  <title>Vector Vanguard</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Single canvas; all UI is drawn on it so layout scales with the playfield -->
+  <canvas id="game" aria-label="Vector Vanguard game" role="img"></canvas>
+  <noscript>Vector Vanguard requires JavaScript to run.</noscript>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

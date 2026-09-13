@@ -1,0 +1,31 @@
+{
+  "name": "vector-vanguard",
+  "version": "1.0.0",
+  "description": "Vector Vanguard — arcade survival shooter (HTML5 + Capacitor, Android).",
+  "author": "Code Pariwar Pvt. Ltd.",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes serve web -l 5173",
+    "dev": "npx --yes serve web -l 5173",
+    "assets:icons": "node scripts/gen-assets.mjs",
+    "assets:native": "npx --yes @capacitor/assets generate --android --iconBackgroundColor '#080c16' --splashBackgroundColor '#080c16'",
+    "cap:add": "npx cap add android",
+    "cap:sync": "npx cap sync android",
+    "cap:open": "npx cap open android",
+    "android:build": "cd android && ./gradlew bundleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/app": "^6.0.1",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/splash-screen": "^6.0.2",
+    "@capacitor/status-bar": "^6.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.1.2",
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,27 @@
+<svg width="2732" height="2732" viewBox="0 0 2732 2732" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#080c16"/>
+    </linearGradient>
+    <linearGradient id="ship" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ff0ff"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="2732" height="2732" fill="url(#bg)"/>
+
+  <g filter="url(#glow)" transform="translate(1366 1180) scale(1.1)">
+    <path d="M0 -220 L190 190 L0 90 L-190 190 Z" fill="url(#ship)"/>
+    <circle cx="0" cy="-120" r="34" fill="#ffffff"/>
+    <path d="M-50 230 L0 320 L50 230 Z" fill="#ffbe3c"/>
+  </g>
+
+  <text x="1366" y="1680" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="16" fill="#00d4ff">VECTOR</text>
+  <text x="1366" y="1830" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="16" fill="#d2dae6">VANGUARD</text>
+</svg>

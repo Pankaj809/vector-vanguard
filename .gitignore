@@ -2,6 +2,9 @@
 build/
 dist/
 
+# Node / Capacitor tooling
+node_modules/
+
 # Runtime data
 highscore.dat
 

@@ -1,0 +1,40 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#080c16"/>
+    </linearGradient>
+    <linearGradient id="ship" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ff0ff"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- tactical grid -->
+  <g stroke="#18243a" stroke-width="2" opacity="0.7">
+    <path d="M0 256 H1024 M0 512 H1024 M0 768 H1024 M256 0 V1024 M512 0 V1024 M768 0 V1024"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#3a4a6a">
+    <rect x="180" y="180" width="6" height="14"/>
+    <rect x="820" y="240" width="5" height="12"/>
+    <rect x="300" y="820" width="6" height="14"/>
+    <rect x="760" y="800" width="5" height="12"/>
+    <rect x="140" y="620" width="4" height="10"/>
+    <rect x="880" y="640" width="4" height="10"/>
+  </g>
+
+  <!-- ship -->
+  <g filter="url(#glow)" transform="translate(512 540)">
+    <path d="M0 -220 L190 190 L0 90 L-190 190 Z" fill="url(#ship)"/>
+    <circle cx="0" cy="-120" r="34" fill="#ffffff"/>
+    <path d="M-50 230 L0 320 L50 230 Z" fill="#ffbe3c"/>
+  </g>
+</svg>
