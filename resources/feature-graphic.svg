@@ -1,0 +1,43 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#080c16"/>
+    </linearGradient>
+    <linearGradient id="ship" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ff0ff"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <radialGradient id="glowbg" cx="0.78" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#0a7d96" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0a7d96" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="500" fill="url(#bg)"/>
+  <rect width="1024" height="500" fill="url(#glowbg)"/>
+
+  <!-- starfield -->
+  <g fill="#3a4a6a">
+    <circle cx="60" cy="70" r="2"/><circle cx="140" cy="220" r="1.5"/>
+    <circle cx="220" cy="60" r="1.5"/><circle cx="300" cy="400" r="2"/>
+    <circle cx="90" cy="330" r="1.5"/><circle cx="180" cy="440" r="1.5"/>
+    <circle cx="40" cy="180" r="1.5"/><circle cx="260" cy="180" r="1.5"/>
+    <circle cx="360" cy="90" r="1.5"/><circle cx="330" cy="270" r="1.5"/>
+  </g>
+
+  <!-- ship -->
+  <g filter="url(#glow)" transform="translate(190 250) scale(0.62)">
+    <path d="M0 -220 L190 190 L0 90 L-190 190 Z" fill="url(#ship)"/>
+    <circle cx="0" cy="-120" r="34" fill="#ffffff"/>
+    <path d="M-50 230 L0 320 L50 230 Z" fill="#ffbe3c"/>
+  </g>
+
+  <text x="420" y="255" font-family="Roboto, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="4" fill="#00d4ff">VECTOR</text>
+  <text x="420" y="345" font-family="Roboto, Arial, sans-serif" font-size="86" font-weight="800" letter-spacing="4" fill="#d2dae6">VANGUARD</text>
+  <text x="424" y="390" font-family="Roboto, Arial, sans-serif" font-size="26" font-weight="400" letter-spacing="6" fill="#6e7d91">ARCADE SPACE SHOOTER</text>
+</svg>
