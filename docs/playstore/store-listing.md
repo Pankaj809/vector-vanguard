@@ -40,21 +40,15 @@ Developed by Code Pariwar Pvt. Ltd.
 
 ## Graphics checklist
 
-- [x] App icon 512×512 — `resources/icon.png` (game-themed, already generated;
-      kept instead of the company logo, see note below)
-- [ ] Feature graphic 1024×500 — not yet created
-- [ ] Phone screenshots (min 2, recommend 4-8) — capture from a running build
+- [x] App icon 512×512 — `resources/playstore/icon-512.png`
+- [x] Feature graphic 1024×500 — `resources/playstore/feature-graphic.png`
+- [x] Phone screenshots ×3 (1080×1920) — `resources/playstore/screenshots/phone/`
+- [x] 7-inch tablet ×3 — `resources/playstore/screenshots/tablet-7/`
+- [x] 10-inch tablet ×3 (1200×2133) — `resources/playstore/screenshots/tablet-10/`
+- [ ] A 4th screenshot (promotion eligibility wants ≥4)
 - [ ] (Optional) short promo video
 
-**Note on the logo you sent:** `resources/company-logo.png` is the Code
-Pariwar company/organization logo (500×246, with mascot + wordmark). It's not
-square and isn't game-themed, so it's not suitable as the *app* icon — Play
-Store requires a 512×512 icon that represents the app itself. The app already
-has a purpose-built spaceship/vector-themed icon (`resources/icon.png`,
-1024×1024) wired into the Android build. I kept that as the Play Store icon
-and saved your logo separately for use as developer branding (e.g. on your
-website or a "Developed by Code Pariwar" credit) — flag me if you actually
-want the company logo used as the app icon instead and I'll swap it.
+See `resources/playstore/README.md` for how each asset was produced.
 
 ## Content rating questionnaire — recommended answers
 
