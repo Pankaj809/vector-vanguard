@@ -14,7 +14,10 @@
     "cap:add": "npx cap add android",
     "cap:sync": "npx cap sync android",
     "cap:open": "npx cap open android",
-    "android:build": "cd android && ./gradlew bundleRelease"
+    "android:build": "cd android && ./gradlew bundleRelease",
+    "play:check": "node deploy/play-deploy.mjs --check",
+    "play:internal": "node deploy/play-deploy.mjs --track internal",
+    "play:production": "node deploy/play-deploy.mjs --track production"
   },
   "dependencies": {
     "@capacitor/android": "^6.1.2",

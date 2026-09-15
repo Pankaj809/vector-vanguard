@@ -19,3 +19,7 @@ highscore.dat
 # Unused / empty asset placeholders
 assets/font.ttf
 assets/background.png
+
+# Play Store deploy credentials (NEVER commit)
+deploy/*.json
+deploy/service-account.json
